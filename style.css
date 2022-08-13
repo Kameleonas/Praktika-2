@@ -86,7 +86,7 @@ p{
     font-size: 7vh;
     grid-area: main;
     animation: flash 2s infinite linear;
-    background-image: url('/Praktika 4/Foto/sky.jpg');
+    background-image: url('/Foto/sky.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
