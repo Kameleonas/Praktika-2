@@ -1,0 +1,98 @@
+.container{
+    display: grid;
+    grid-template-columns: 14% 70% 16%;
+    grid-template-rows: max-content;
+    grid-template-areas:
+    'menu header right'
+    'menu main main';
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar-container{
+    grid-area: menu;
+    width: 100%;
+    background-color: rgb(36 40 44);
+    color: rgb(220 220 220);
+    min-width: 250px;
+    max-width: 280px;
+}
+
+.sidebar-container h1{
+    margin-left: 8%;
+}
+
+header{
+    grid-area: header;
+    margin-top: 4vh;
+}
+
+header > p{
+    margin-left: 3vw;
+    /* position: fixed; */
+}
+
+.wideLine{
+    height: 1.4px;
+    width: 100%;
+    /* margin-left: 10%; */
+    background-color: rgb(27 28 30);
+    opacity: .2;
+}
+
+.description{
+    grid-area: right;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.description > p{
+    margin-bottom: 5vh;
+}
+
+.theSecond{
+    position: absolute;
+    height: 1.4px;
+    width: 13%;
+    background-color: rgb(27 28 30);
+    opacity: .2;
+}
+
+.lightblue{
+    color: rgb(88 174 239);
+}
+
+.solidLine{
+    height: 1.6px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(27 28 30);
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 1.5vh;
+}
+
+p{
+    font-size: 2.2vh;
+}
+.sidebar-container>h2{
+    margin-left: 1vw;
+    text-decoration: none;
+}
+.main{
+    grid-area: main;
+}
+.lightblack{
+    color: rgb(168, 168, 168);
+    padding-left: 1vw;
+}
+iframe{
+    margin-left: 20vh;
+    margin-top: 5vh;
+}

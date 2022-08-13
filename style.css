@@ -1,0 +1,137 @@
+.container{
+    display: grid;
+    grid-template-columns: 14% 70% 16%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas:
+    'menu header right'
+    'menu main main';
+    height: 98vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar-container{
+    grid-area: menu;
+    width: 100%;
+    background-color: rgb(36 40 44);
+    color: rgb(220 220 220);
+    min-width: 250px;
+    max-width: 280px;
+}
+
+.sidebar-container > h1{
+    margin-left: 8%;
+}
+
+header{
+    grid-area: header;
+    margin-top: 4vh;
+    height: 25%;
+}
+
+header > p{
+    margin-left: 3vw;
+}
+
+.wideLine{
+    height: 1.4px;
+    width: 100%;
+    /* margin-left: 10%; */
+    background-color: rgb(27 28 30);
+    opacity: .2;
+}
+
+.description{
+    grid-area: right;
+    margin-top: 1.2vh;
+    height: 25%;
+}
+
+.description > p{
+    margin-bottom: 5vh;
+}
+
+.theSecond{
+    position: absolute;
+    height: 1.4px;
+    width: 13%;
+    background-color: rgb(27 28 30);
+    opacity: .2;
+}
+
+.lightblue{
+    color: rgb(88 174 239);
+}
+
+.solidLine{
+    height: 1.6px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(27 28 30);
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 1.5vh;
+    text-decoration: none;
+}
+
+p{
+    font-size: 2.2vh;
+}
+
+.main{
+    font-size: 7vh;
+    grid-area: main;
+    animation: flash 2s infinite linear;
+    background-image: url('/Praktika 4/Foto/sky.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    padding-left: 50px;
+}
+
+@keyframes flash{
+    0%{text-shadow: .3vh .2vw 0.4vh red;}
+    25%{text-shadow:.2vh .2vw 0.4vh blue;}
+    50%{text-shadow:.3vh .2vw 0.4vh rgb(255, 0, 221);}
+    75%{text-shadow:.3vh .2vw 0.4vh rgb(174, 211, 9);}
+    100%{text-shadow:.3vh .2vw 0.4vh red;}
+ 
+}
+
+.lightblack{
+    color: rgb(168, 168, 168);
+    padding-left: 1vw;
+}
+
+iframe{
+    margin-left: 20vh;
+    margin-top: 5vh;
+}
+
+img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    animation: fall 3s infinite linear;
+}
+
+@keyframes fall {
+    0%{left:0vh; top:-20vw;transform: rotate(360deg); }
+    25%{left:14vh; top:2vw;}
+    50%{left:32vh; top:15vw;}
+    75%{left:26vh; top:22vw;}
+    100%{left:0vh; top:70vh;transform: rotate(0deg);}
+}
+
+.decoration{
+    color: rgb(7, 23, 68);
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
