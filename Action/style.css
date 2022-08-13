@@ -96,3 +96,8 @@ iframe{
     margin-left: 20vh;
     margin-top: 5vh;
 }
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(220 220 209);
+}
